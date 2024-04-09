@@ -33,8 +33,6 @@ def lfsr(taps, state):
     return state, new_bit
 
 
-# Функция для проверки уникальности состояний РСЛОС
-
 
 # Многочлен для РСЛОС
 poly = poly_to_binary('x^5 + x^2 + 1')
@@ -100,5 +98,4 @@ df.index += 1
 df.reset_index(inplace=True)
 df.rename(columns={'index': 'Номер сдвига'}, inplace=True)
 
-# Теперь df содержит таблицу, подобную вашей
 print(df.head(24))
